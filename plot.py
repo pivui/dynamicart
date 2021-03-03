@@ -94,11 +94,11 @@ def free_ss_response(A, x0, T, tf):
     return [X,t]
 # Demo
 def demo():
-    n       = 80
-    ncases  = 20
+    n       = 50
+    ncases  = 10
     while (True):
         [A,B,C,D]   = random_ss(n)
-        [X,t]       = free_ss_response(A,  np.random.randn(n,ncases),0.05, 20)
-        polar_trajectories(X, alpha0 = 0.2, last_black=True,alpha_change=False)
+        [X,t]       = free_ss_response(A,  np.random.randn(n,ncases),0.005, 20)
+        polar_trajectories(X, alpha0 = 0.05, last_black=True,alpha_change=False)
 
 demo()
