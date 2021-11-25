@@ -5,11 +5,13 @@ Pool of routines to explore visually interesting stuff associated with dynamical
 
 ```matlab
 H = rss(20,1,1,1);
+% Time-domain
 dynart.ex_polar_traj(H, 20);
 dynart.ex_star_traj(H, 20);
 dynart.ex_bary_traj(H, 6);
 dynart.ex_wheel_traj(H, 10);
-
+% Frequency-domain
+dynart.ex_bode(H);
 ```
 
 
@@ -17,3 +19,4 @@ dynart.ex_wheel_traj(H, 10);
 ![Example 2](img/star1.png)
 ![Example 3](img/bary1.png)
 ![Example 4](img/wheel1.png)
+![Example 5](img/bode1.png)
